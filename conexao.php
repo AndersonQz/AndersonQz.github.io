@@ -1,9 +1,9 @@
 <?php
 
-$servidor = "localhost";
-$dbname = "crud";
-$dbusuario = "root";
-$dbsenha = "";
+$servidor = "db4free.net:3306";
+$dbname = "fmlrgb";
+$dbusuario = "andersonfml";
+$dbsenha = "fmlrgbfml";
 
 $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 if (!$conn){
