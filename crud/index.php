@@ -1,4 +1,5 @@
 <h1>Teste NodeMCU</h1>
+<h1>Teste NodeMCU</h1>
 <?php 
 include_once"comm.php";
 
