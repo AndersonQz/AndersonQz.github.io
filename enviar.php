@@ -1,13 +1,13 @@
 <?php 
-include_once"comm.php";
+include_once"conexao.php";
 
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
+$red = $_POST['red'];
+$green = $_POST['green'];
+$blue = $_POST['blue'];
 $conn = mysqli_connect($servidor,$dbusuario,$dbsenha,$dbname);
 
 mysqli_select_db($conn,'$dbname');
-$sql = "INSERT INTO cliente (nome,email,telefone) VALUES ('$nome', '$email', '$telefone')";
+$sql = "INSERT INTO cliente (red,green,blue) VALUES ('$red', '$green', '$blue')";
 if (mysqli_query($conn, $sql)){
 
 	echo "enviado dados";
